@@ -1,113 +1,98 @@
+import ColorCard from "@/components/common/ColorCard";
+import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main>
+      <HeroSection />
+      <section className="flex gap-8 items-center  container my-8">
+        <h2 className="heading-2 bg-secondary px-2 leading-tight rounded-lg">Services</h2>
+        <p className="text-lg max-w-[40rem]">
+          At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+          These services include:
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section className="container my-8 grid grid-cols-2 gap-8">
+        <ColorCard className="bg-primary-foreground">
+          <div className="">
+            <div className="">
+              <ColorCard.Title className="bg-secondary ">Search engine</ColorCard.Title>
+              <ColorCard.Title className="bg-secondary">optimization</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow-dark.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-1.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+        <ColorCard className="bg-secondary">
+          <div className="">
+            <div className="">
+            <ColorCard.Title className="bg-white ">Pay-per-click</ColorCard.Title>
+            <ColorCard.Title className="bg-white">advertising</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow-dark.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-2.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+        <ColorCard className="bg-primary">
+          <div className="">
+            <div className="">
+              <ColorCard.Title className="bg-white ">Social Media</ColorCard.Title>
+              <ColorCard.Title className="bg-white">Marketing</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl text-white">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-3.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+        <ColorCard className="bg-primary-foreground">
+          <div className="">
+            <div className="">
+              <ColorCard.Title className="bg-secondary ">Email</ColorCard.Title>
+              <ColorCard.Title className="bg-secondary">Marketing</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow-dark.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-4.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+        <ColorCard className="bg-secondary">
+          <div className="">
+            <div className="">
+            <ColorCard.Title className="bg-white ">Content</ColorCard.Title>
+            <ColorCard.Title className="bg-white">Creation</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow-dark.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-5.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+        <ColorCard className="bg-primary">
+          <div className="">
+            <div className="">
+              <ColorCard.Title className="bg-secondary ">Analytics and </ColorCard.Title>
+              <ColorCard.Title className="bg-secondary">Tracking</ColorCard.Title>
+            </div>
+            <div className="flex gap-4 items-center mt-24">
+              <Image src="/arrow.svg" height={41} width={41} alt="arrow" />
+              <p className="text-xl text-white">Learn more</p>
+            </div>
+          </div>
+          <Image src="/cards/card-3.png" className="object-contain" alt="hero" width={210} height={210} />
+        </ColorCard>
+      </section>
     </main>
   );
 }
