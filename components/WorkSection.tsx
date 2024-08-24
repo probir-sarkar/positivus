@@ -24,8 +24,8 @@ const WorkSection = () => {
           <AccordionItem key={item.title} value={item.title}>
             <AccordionTrigger className="">
               <div className="flex gap-4 items-center">
-                <p className="text-6xl">0{index + 1}</p>
-                <p className="text-3xl">{item.title}</p>
+                <p className="heading-1">0{index + 1}</p>
+                <p className="heading-3">{item.title}</p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
