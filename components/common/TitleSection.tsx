@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 const TitleSection = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
-  return <section className={cn("flex gap-8 items-center  container my-8", className)} {...props} />;
+  return <section className={cn("flex gap-8 items-center  container mb-8 mt-24", className)} {...props} />;
 };
 
 const Title = ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => {

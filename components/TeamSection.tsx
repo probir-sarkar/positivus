@@ -1,23 +1,29 @@
 import Image from "next/image";
 import ColorCard from "./common/ColorCard";
+import { Button } from "./ui/button";
 
 const TeamSection = () => {
   return (
-    <section className="container my-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4 xl:gap-8">
-      {team.map((item, index) => (
-        <ColorCard key={index} className="block md:p-6 xl:p-8">
-          <div className="flex gap-4 w-full border-b border-black pb-6">
-            <Image src={`/team/${item.image}`} className="object-contain" alt="hero" width={105} height={105} />
-            <div className="flex flex-col justify-end relative w-full">
-              <Image className="absolute right-0 top-0" src="/linkedIn.svg" height={35} width={35} alt="linkedin" />
-              <h4 className="heading-4">{item.name}</h4>
-              <p className="text-lg">{item.position}</p>
+    <>
+      <section className="container my-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-4 xl:gap-8">
+        {team.map((item, index) => (
+          <ColorCard key={index} className="block md:p-6 xl:p-8">
+            <div className="flex gap-4 w-full border-b border-black pb-6">
+              <Image src={`/team/${item.image}`} className="object-contain" alt="hero" width={105} height={105} />
+              <div className="flex flex-col justify-end relative w-full">
+                <Image className="absolute right-0 top-0" src="/linkedIn.svg" height={35} width={35} alt="linkedin" />
+                <h4 className="heading-4">{item.name}</h4>
+                <p className="text-lg">{item.position}</p>
+              </div>
             </div>
-          </div>
-          <p className="text-lg pt-6">{item.description}</p>
-        </ColorCard>
-      ))}
-    </section>
+            <p className="text-lg pt-6">{item.description}</p>
+          </ColorCard>
+        ))}
+      </section>
+      <section className="container  my-8 flex justify-end">
+        <Button className="p-4 md:p-6 xl:p-8 xl:px-16  text-lg rounded-xl">See all team</Button>
+      </section>
+    </>
   );
 };
 

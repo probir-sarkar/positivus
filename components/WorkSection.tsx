@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { time } from "console";
 const WorkSection = () => {
   return (
-    <section className="container my-8">
+    <section className="container my-16">
       {" "}
       <Accordion type="single" defaultValue="Consultation" collapsible className="w-full">
         {/* <AccordionItem value="item-1">

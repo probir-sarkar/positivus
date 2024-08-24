@@ -28,7 +28,7 @@ export default function Home() {
               Contact us today to learn more about how our digital marketing services can help your business grow and
               succeed online.
             </p>
-            <Button className="p-4 md:p-6 xl:p-8  text-lg rounded-xl">Get your free proposal</Button>
+            <Button className="p-4 md:p-6 xl:p-8 text-lg rounded-xl">Get your free proposal</Button>
           </div>
           <div className="hidden lg:block">
             <Image src="/Illustration-1.png" className="-my-6" alt="hero" width={380} height={380} />
@@ -83,7 +83,7 @@ export default function Home() {
         <TitleSection.SubTitle>Step-by-Step Guide to Achieving Your Business Goals</TitleSection.SubTitle>
       </TitleSection>
       <WorkSection />
-      <TitleSection>
+      <TitleSection className="">
         <TitleSection.Title>Team</TitleSection.Title>
         <TitleSection.SubTitle className="max-w-md">
           Meet the skilled and experienced team behind our successful digital marketing strategies
