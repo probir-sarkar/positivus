@@ -3,6 +3,7 @@ import ColorCard from "@/components/common/ColorCard";
 import TitleSection from "@/components/common/TitleSection";
 import HeroSection from "@/components/HeroSection";
 import TeamSection from "@/components/TeamSection";
+import TestimonialSection from "@/components/TestimonialSection";
 import { Button } from "@/components/ui/button";
 import WorkSection from "@/components/WorkSection";
 import Image from "next/image";
@@ -12,13 +13,13 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <section className="flex gap-8 items-center  container my-8">
-        <h2 className="heading-2 bg-secondary px-2 leading-tight rounded-lg">Services</h2>
-        <p className="text-lg max-w-[40rem]">
+      <TitleSection>
+        <TitleSection.Title>Services</TitleSection.Title>
+        <TitleSection.SubTitle className=" max-w-[40rem]">
           At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
           These services include:
-        </p>
-      </section>
+        </TitleSection.SubTitle>
+      </TitleSection>
       <CardSection />
       <section className=" container my-24   ">
         <div className="bg-primary-foreground rounded-[45px] px-10 xl:px-16 flex md:gap-10 xl:gap-16">
@@ -36,14 +37,14 @@ export default function Home() {
         </div>
       </section>
       {/* Case studies */}
-      <section className="flex gap-8 items-center  container my-8">
-        <h2 className="heading-2 bg-secondary px-2 leading-tight rounded-lg">Case Studies</h2>
-        <p className="text-lg max-w-[40rem]">
+      <TitleSection>
+        <TitleSection.Title>Case Studies</TitleSection.Title>
+        <TitleSection.SubTitle className="max-w-[40rem]">
           Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
-        </p>
-      </section>
+        </TitleSection.SubTitle>
+      </TitleSection>
       <section className="container my-8">
-        <div className="bg-primary p-6 md:p-10 xl:p-16 flex gap-6 md:gap-10 xl:gap-16 text-white text-lg rounded-[45px]">
+        <div className="bg-primary p-6 md:p-10 xl:p-16 flex md:flex-row flex-col gap-6 md:gap-10 xl:gap-16 text-white text-lg rounded-[45px]">
           <div className="">
             <p className="mb-4">
               For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
@@ -54,7 +55,7 @@ export default function Home() {
               <Image src="/green-arrow.svg" className="ml-2 mb-[2px] inline-block" height={20} width={20} alt="arrow" />
             </Link>
           </div>
-          <div className="w-[1px] bg-white"></div>
+          <div className="md:w-[1px] w-full md:h-auto h-[1px] bg-white"></div>
           <div className="">
             <p className="mb-4">
               For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key
@@ -65,7 +66,7 @@ export default function Home() {
               <Image src="/green-arrow.svg" className="ml-2 mb-[2px] inline-block" height={20} width={20} alt="arrow" />
             </Link>
           </div>
-          <div className="w-[1px] bg-white"></div>
+          <div className="md:w-[1px] w-full md:h-auto h-[1px] bg-white"></div>
           <div className="">
             <p className="mb-4">
               For a national retail chain, we created a social media marketing campaign that increased followers by 25%
@@ -83,6 +84,7 @@ export default function Home() {
         <TitleSection.SubTitle>Step-by-Step Guide to Achieving Your Business Goals</TitleSection.SubTitle>
       </TitleSection>
       <WorkSection />
+      {/* Team */}
       <TitleSection className="">
         <TitleSection.Title>Team</TitleSection.Title>
         <TitleSection.SubTitle className="max-w-md">
@@ -90,6 +92,14 @@ export default function Home() {
         </TitleSection.SubTitle>
       </TitleSection>
       <TeamSection />
+      {/* Testimonials */}
+      <TitleSection className="">
+        <TitleSection.Title>Testimonials</TitleSection.Title>
+        <TitleSection.SubTitle className="max-w-md">
+          Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
+        </TitleSection.SubTitle>
+      </TitleSection>
+      <TestimonialSection/>
     </main>
   );
 }

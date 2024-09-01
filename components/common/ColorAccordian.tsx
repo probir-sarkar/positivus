@@ -33,7 +33,7 @@ const AccordionTrigger = ({
       {...props}
     >
       {children}
-      <div className="h-10 xl:h-12 w-10 xl:w-12 rounded-full bg-primary-foreground flex items-center justify-center border border-primary">
+      <div className="h-10 xl:h-12 w-10 xl:w-12 rounded-full bg-primary-foreground flex items-center justify-center border border-primary flex-shrink-0">
         <Minus strokeWidth={3} size={24}  className="group-data-[state=closed]:hidden w-4 xl:w-6" />
         <Plus strokeWidth={3} size={24} className="group-data-[state=open]:hidden w-4 xl:w-6" />
       </div>
