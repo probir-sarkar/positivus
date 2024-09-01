@@ -13,15 +13,15 @@ const TeamSection = () => {
               <div className="flex flex-col justify-end relative w-full">
                 <Image className="absolute right-0 top-0" src="/linkedIn.svg" height={35} width={35} alt="linkedin" />
                 <h4 className="heading-4">{item.name}</h4>
-                <p className="text-lg">{item.position}</p>
+                <p className="md:text-lg">{item.position}</p>
               </div>
             </div>
-            <p className="text-lg pt-6">{item.description}</p>
+            <p className="md:text-lg pt-6">{item.description}</p>
           </ColorCard>
         ))}
       </section>
       <section className="container  my-8 flex justify-end">
-        <Button className="p-4 md:p-6 xl:p-8 xl:px-16  text-lg rounded-xl">See all team</Button>
+        <Button className="p-4 md:p-6 xl:p-8 xl:px-16  md:text-lg rounded-xl">See all team</Button>
       </section>
     </>
   );

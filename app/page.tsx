@@ -22,14 +22,14 @@ export default function Home() {
       </TitleSection>
       <CardSection />
       <section className=" container my-24   ">
-        <div className="bg-primary-foreground rounded-[45px] px-10 xl:px-16 flex md:gap-10 xl:gap-16">
+        <div className="bg-primary-foreground rounded-[45px] p-8 md:py-0 xl:px-16 flex md:gap-10 xl:gap-16">
           <div className="space-y-6 lg:max-w-lg md:py-10 xl:py-16">
             <h3 className="heading-3">Let’s make things happen</h3>
-            <p className="text-lg">
+            <p className="md:text-lg">
               Contact us today to learn more about how our digital marketing services can help your business grow and
               succeed online.
             </p>
-            <Button className="p-4 md:p-6 xl:p-8 text-lg rounded-xl">Get your free proposal</Button>
+            <Button className="p-4 md:p-6 xl:p-8 md:text-lg rounded-xl">Get your free proposal</Button>
           </div>
           <div className="hidden lg:block">
             <Image src="/Illustration-1.png" className="-my-6" alt="hero" width={380} height={380} />
@@ -44,7 +44,7 @@ export default function Home() {
         </TitleSection.SubTitle>
       </TitleSection>
       <section className="container my-8">
-        <div className="bg-primary p-6 md:p-10 xl:p-16 flex md:flex-row flex-col gap-6 md:gap-10 xl:gap-16 text-white text-lg rounded-[45px]">
+        <div className="bg-primary p-6 md:p-10 xl:p-16 flex md:flex-row flex-col gap-6 md:gap-10 xl:gap-16 text-white md:text-lg rounded-[45px]">
           <div className="">
             <p className="mb-4">
               For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website

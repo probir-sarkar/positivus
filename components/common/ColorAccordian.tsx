@@ -11,7 +11,7 @@ const Accordion = AccordionPrimitive.Root;
 const AccordionItem = ({ className, ...props }: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>) => (
   <AccordionPrimitive.Item
     className={cn(
-      "border border-primary rounded-[45px] p-4 md:p-6 xl:p-8 px-6 md:px-8 xl:px-12 shadow-[hsl(var(--primary))_0px_5px_0px] bg-primary-foreground data-[state=open]:bg-secondary mb-6",
+      "border border-primary rounded-[45px] p-3 md:p-6 xl:p-8 px-6 md:px-8 xl:px-12 shadow-[hsl(var(--primary))_0px_5px_0px] bg-primary-foreground data-[state=open]:bg-secondary mb-6",
       className
     )}
     {...props}
@@ -33,7 +33,7 @@ const AccordionTrigger = ({
       {...props}
     >
       {children}
-      <div className="h-10 xl:h-12 w-10 xl:w-12 rounded-full bg-primary-foreground flex items-center justify-center border border-primary flex-shrink-0">
+      <div className="h-8 md:h-10 xl:h-12 w-8 md:w-10 xl:w-12 rounded-full bg-primary-foreground flex items-center justify-center border border-primary flex-shrink-0">
         <Minus strokeWidth={3} size={24}  className="group-data-[state=closed]:hidden w-4 xl:w-6" />
         <Plus strokeWidth={3} size={24} className="group-data-[state=open]:hidden w-4 xl:w-6" />
       </div>

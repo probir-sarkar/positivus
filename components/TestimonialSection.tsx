@@ -39,8 +39,8 @@ const TestimonialSection = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
 
   return (
-    <section className="container my-8 mx-auto py-8 md:px-0 ">
-      <div className="bg-primary rounded-[45px] ">
+    <section className="container my-8 mx-auto py-8 px-1 md:px-0 ">
+      <div className="bg-primary md:rounded-[45px] rounded-3xl ">
       <EmblaCarousel slides={testimonials} options={OPTIONS} />
       </div>
     </section>

@@ -13,7 +13,7 @@ const WorkSection = () => {
             </div>
           </AccordionTrigger>
           <AccordionContent>
-            <p className="text-lg">
+            <p className="md:text-lg">
               During the initial consultation, we will discuss your business goals and objectives, target audience, and
               current marketing efforts. This will allow us to understand your needs and tailor our services to best fit
               your requirements.
@@ -25,11 +25,11 @@ const WorkSection = () => {
             <AccordionTrigger className="">
               <div className="flex gap-4 items-center">
                 <p className="heading-1">0{index + 1}</p>
-                <p className="heading-3">{item.title}</p>
+                <p className="heading-3 text-left">{item.title}</p>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <p className="text-lg">{item.content}</p>
+              <p className="md:text-lg">{item.content}</p>
             </AccordionContent>
           </AccordionItem>
         ))}
@@ -47,7 +47,7 @@ const DATA = [
       "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
   },
   {
-    title: "Research and Strategy Development",
+    title: "Research and Strategy",
     content:
       "We will conduct a thorough research on your target audience, competitors, and industry trends. We will develop a comprehensive marketing strategy that will help you achieve your goals."
   },

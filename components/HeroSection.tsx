@@ -9,23 +9,23 @@ const HeroSection = () => {
         <Image src="/logo.svg" className="object-cover" alt="logo" width={220} height={56} />
         <div className="hidden lg:flex gap-5 xl:gap-10 items-center">
           {["About", "Services", "Blog", "Contact"].map((item) => (
-            <Link href="#" className="text-lg" key={item}>
+            <Link href="#" className="md:text-lg" key={item}>
               {item}
             </Link>
           ))}
-          <Button variant={"outline"} className="p-4 md:p-6 xl:p-8 text-lg rounded-xl border-2 border-primary">
+          <Button variant={"outline"} className="p-4 md:p-6 xl:p-8 md:text-lg rounded-xl border-2 border-primary">
             Book a consultation
           </Button>
         </div>
       </nav>
-      <div className="flex flex-col-reverse md:grid md:grid-cols-2  gap-10 xl:gap-20 my-8">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2  gap-6 xl:gap-20 my-8">
         <div className="max-w-lg space-y-6 md:space-y-8 xl:space-y-10 ">
           <h2 className="heading-1">Navigating the digital landscape for success</h2>
           <p className="text-xl">
             Our digital marketing agency helps businesses grow and succeed online through a range of services including
             SEO, PPC, social media marketing, and content creation.
           </p>
-          <Button className="p-4 md:p-6 xl:p-8 text-lg rounded-xl">Book a consultation</Button>
+          <Button className="p-4 md:p-6 xl:p-8 md:text-lg rounded-xl">Book a consultation</Button>
         </div>
         <div className="max-w-xl order-1 ">
           <Image src="/hero.svg" className="object-cover" alt="hero" width={1500} height={1500} />
